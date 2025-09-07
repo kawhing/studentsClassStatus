@@ -1,0 +1,33 @@
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略IDE的配置文件
+cmake-build-debug/
+build/
+out/
+.vscode/
+.idea/
+*.sublime-workspace
+
+# 忽略编译生成的文件
+*.o
+*.obj
+*.exe
+*.dll
+
+# 忽略日志文件
+*.log
+
+# 忽略虚拟环境和环境配置文件
+.venv/
+env/
+*.env
+*.pro.user.*
+*.pro.user
+# 忽略缓存文件
+.cache/
+node_modules/
+
+# 忽略txt文件
+*.txt
