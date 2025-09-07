@@ -1,7 +1,7 @@
 #pragma once
-#include "mainwindow.h"
+#include "include/mainwindow.h"
 #include "ui_mainwindow.h"
-#include "model.h"
+#include "include/model.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

@@ -1,5 +1,5 @@
 #pragma once
-#include "model.h"
+#include "include/model.h"
 
 Model::Model(const QString modelFile) {
     const QString extension = "pt";
@@ -32,7 +32,7 @@ void Model::runPy(){
             qDebug() << "Python错误:" << error;
         });
         // 启动进程
-        modelProcess.start(pythonPath, QStringList() << "/home/kawhing/Repository/class/main.py" << this->modelFile << this->pictureFile);
+        modelProcess.start(pythonPath, QStringList() << "/home/kawhing/Repository/studentsClassStatus/main.py" << this->modelFile << this->pictureFile);
         // 等待进程完成（设置更长超时时间，如60秒）
         if (modelProcess.waitForFinished(60000)) {
             const QString result = "result.jpg";
